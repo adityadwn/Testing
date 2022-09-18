@@ -1,0 +1,12 @@
+PROGRAM HospitalAdmission
+
+STORE "Prospective_patients" AS STRING WITH LENGTH "30"
+STORE "Form" AS STRING WITH NULL
+STORE "Called" AS CONDITION WITH TYPE "Yes", "No"
+
+IF "Called" EQUAL "Yes"
+    PRINT "Receive queue card"
+ELSE
+    PRINT "Not registered yet"
+
+END PROGRAM   
